@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: auto;
+    z-index: 3;
+    padding-top: 120px;
+}
+
+#carouselExampleCaptions {
+    border: outset rgb(51, 80, 158) 8px;
+}
+
+
+.tuto p {
+    font-size: 18px;
+}
+
+header {
+    background-image: url(https://64.media.tumblr.com/c8c3e4629ccf656cfe7245790e5227c2/268146304df94902-fa/s2048x3072/184794c58457a6a948034b6d63ebe4a588c51587.png);
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    z-index: 5;
+}
+
+
+nav {
+    float: right;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(51, 58, 158);
+    font-weight: bold;
+}
+
+aside{
+    padding-top: 100px;
+}
+
+
+
+main {
+    padding-top: 100px;
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 300px;
+}
+
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    text-shadow: 1px 2px rgb(114, 113, 113);
+    float: left;
+    padding: 8px;
+}
+
+h2 {
+    margin-left: 70px;
+    font-family: 'Noto Serif', serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+

@@ -1,0 +1,26 @@
+[
+    {
+        "userId": "Uno",
+        "id": "one",
+        "nombre": "Aros corazones rotos",
+        "img": "img/corazones.jpg",
+        "material": "porcelana fria y acero quirurgico.",
+        "precio": "350"
+    },
+    {
+        "userId": "Dos",
+        "id": "two",
+        "nombre": "Aros de cocos",
+        "img": "img/cocos.jpg",
+        "material": "porcelana fria y acero quirurgico.",
+        "precio": "400"
+    },
+    {
+        "userId": "Tres",
+        "id": "three",
+        "nombre": "Aros Polnareff",
+        "img": "img/polnareff.jpg",
+        "material": "Porcelana fria, metal y acero quirurgico.",
+        "precio": "450"
+    }
+]
