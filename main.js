@@ -1,25 +1,25 @@
 const baseDeDatos = [
     {
         id: 1,
-        nombre: 'Aros de cocos',
+        nombre: 'Cocos',
         precio: 400,
         imagen: 'img/cocos.jpg'
     },
     {
         id: 2,
-        nombre: 'Aros de corazones rotos',
+        nombre: 'Corazones',
         precio: 350,
         imagen: 'img/corazones.jpg'
     },
     {
         id: 3,
-        nombre: 'Aros de Polnareff',
+        nombre: 'Polnareff',
         precio: 450,
         imagen: 'img/polnareff.jpg'
     },
     {
         id: 4,
-        nombre: 'Aros a pedido',
+        nombre: 'Personalizado',
         precio: 500,
         imagen: 'img/pregunta.jpg'
     }

@@ -65,11 +65,13 @@ aside{
     padding-top: 100px;
 }
 
-
-
 main {
     padding-top: 100px;
     margin-left: 20px;
+}
+
+#carrito {
+    text-align: right;
 }
 
 footer {
