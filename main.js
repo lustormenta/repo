@@ -1,5 +1,4 @@
-const baseDeDatos = [
-    {
+const baseDeDatos = [{
         id: 1,
         nombre: 'Cocos',
         precio: 400,
@@ -32,6 +31,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const DOMbotonSubmit = document.querySelector('#boton-comprar');
 
 
 function renderizarProductos() {
@@ -147,6 +147,16 @@ function calcularTotal() {
 }
 
 
+function comprar() {
+
+    carrito = [];
+
+    renderizarCarrito();
+    calcularTotal();
+
+    console.log('Comprado');
+}
+
 function vaciarCarrito() {
 
     carrito = [];
@@ -157,6 +167,9 @@ function vaciarCarrito() {
 
 
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+DOMbotonSubmit.addEventListener('click', comprar);
 
 
 renderizarProductos();
+
+
