@@ -11,13 +11,9 @@ body {
     background-color: whitesmoke;
 }
 
-#carouselExampleCaptions {
-    border: outset rgb(51, 80, 158) 8px;
-}
-
-
-.tuto p {
-    font-size: 18px;
+div.background {
+    background-color: rgb(227, 227, 236);
+    padding-bottom: 50px;
 }
 
 header {
@@ -29,8 +25,16 @@ header {
     z-index: 5;
 }
 
+main {
+    padding-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
+#carouselExampleCaptions {
+    border: outset rgb(51, 80, 158) 8px;
+}
 
 nav {
     float: right;
@@ -54,17 +58,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-
-main {
-    padding-top: 100px;
-}
-
-
-
-footer {
-    margin-top: 200px;
-}
-
+/*---letras---*/
 
 h1 {
     font-family: 'Nunito', sans-serif;
@@ -80,9 +74,40 @@ h2 {
 }
 
 h3 {
+    padding-bottom: 20px;
     font-size: 20px;
     font-family: 'Noto Serif', serif;
+    text-align: center;
 }
 
+.tuto p {
+    font-size: 18px;
+}
 
+.redes {
+    width: 30px;
+}
 
+@media only screen and (max-width: 823px) {
+    nav {
+        float: right;
+    }
+
+    .menu {
+        width: 425px;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-left: 30px;
+        padding: 10px 0;
+        float: left;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(51, 58, 158);
+        font-weight: bold;
+    }
+}

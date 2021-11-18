@@ -9,17 +9,11 @@
     <link rel="icon" href="img/logo.PNG">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="data/datos.json" />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -33,12 +27,13 @@
     </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.slim.min.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 
 <body>
+
+    <div class="background">
 
     <header>
 
@@ -60,6 +55,8 @@
 
 
     <main class="contenedor">
+
+        <h3>Aros artesanales hechos con porcelana fria y mucha dedicacion</h3>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -107,24 +104,23 @@
 
     </main>
 
-    
+</div>
 
-    <footer class="pink">
+    <footer class=".text-secondary">
         <div class="container py-5">
             <div class="row py-4">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <h6 class="text-uppercase font-weight-bold mb-4">Mis redes</h6>
                     <ul class="list-inline mt-4">
 
-                        <li class="list-inline-item"><a href="https://" target="_blank" title="facebook"><i
-                                    class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/merakilandia_/" target="_blank"
-                                title="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://" target="_blank" title="vimeo"><i
-                                    class="fa fa-youtube"></i></a></li>
-
-                        <li class="list-inline-item"><a href=" https://" target="_blank" title="vimeo"><i
-                                    class="fa fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="https://" target="_blank" title="facebook">
+                            <span><img class="redes" src="img/facebook.png" alt=""></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/merakilandia_/" target="_blank"title="instagram">
+                            <span><img class="redes" src="img/instagram.png" alt=""></span></a></li>
+                        <li class="list-inline-item"><a href="https://" target="_blank" title="youtube">
+                            <span><img class="redes" src="img/youtube.png" alt=""></span></a></li>
+                        <li class="list-inline-item"><a href=" https://" target="_blank" title="whatsapp">
+                            <span><img class="redes" src="img/whatsapp.png" alt=""></span></a></li>
 
                     </ul>
                 </div>
@@ -149,18 +145,18 @@
                     <p class="text-capitalize mb-4">Precios accesibles, hace tu consulta!</p>
                     <div class="p-1 rounded border">
                         <div class="input-group">
-                            <input id="consulta" type="text" placeholder="Ingresa tu consulta" aria-describedby="button-addon1"
-                                class="form-control border-0 shadow-0">
+                            <input id="consulta" type="text" placeholder="Ingresa tu consulta"
+                                aria-describedby="button-addon1" class="form-control border-0 shadow-0"
+                                required="required">
                             <div class="input-group-append">
                                 <button id="button-addon1" type="submit" class="btn btn-link"><i
-                                        class="fa fa-paper-plane"></i></button>
+                                        class="fa fa-paper-plane" onclick="enviarConsulta()"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Copyrights -->
         <div class="bg-light py-4">
             <div class="container text-center">
@@ -172,7 +168,8 @@
     </footer>
 
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

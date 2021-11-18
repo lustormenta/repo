@@ -41,7 +41,6 @@ const pintarCards = data => {
         templateCard.querySelector('img').setAttribute('src', producto.imagen)
         templateCard.querySelector('.btn-dark').dataset.id = producto.id
 
-
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
@@ -152,4 +151,16 @@ const btnAccion = e => {
     }
 
     e.stopPropagation()
+}
+
+function enviarConsulta() {
+    const consulta = document.getElementById("consulta");
+    if (consulta.value != '') {
+        Swal.fire(
+            'Mensaje enviado!',
+            'Pronto responderemos tu consulta!',
+            'success'
+        )
+        consulta.value = ''
+    }
 }
