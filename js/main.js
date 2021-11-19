@@ -125,6 +125,17 @@ const pintarFooter = () => {
         carrito = {}
         pintarCarrito()
     })
+
+    const btnComprar = document.getElementById('comprar-productos')
+    btnComprar.addEventListener('click', () => {
+        carrito = {}
+        pintarCarrito()
+        Swal.fire(
+            'Compra exitosa!',
+            'Que los disfrutes!',
+            'success'
+        )
+    })
 }
 
 const btnAccion = e => {
